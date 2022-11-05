@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxx.mapper.UserMapper">
+
+    <!-- 获取参数时  需要  ${ew.customSqlSeqment}
+          可以通过debug查看-->
+    <select id="findMyUserByWrapper" resultType="com.xxx.pojo.User">
+        select * from user ${ew.customSqlSegment}
+    </select>
+
+    <select id="findMyUser" resultType="com.xxx.pojo.User">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>
