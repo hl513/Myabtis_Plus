@@ -11,5 +11,6 @@ public class Test {
         System.out.println("测试分支冲突  主分支");
         System.out.println("用于测试分支冲突");
         System.out.println("push Test");
+        System.out.println("pull Test");
     }
 }
